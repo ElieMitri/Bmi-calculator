@@ -1,38 +1,64 @@
+body {
+  background-color: rgba(104, 104, 104, 0.658);
+  font-family: sans-serif;
+}
+
+.bmi__input {
+  width: 180px;
+  height: 40px;
+  background-color: black;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 0 20px;
+  margin: 0 5px;
+}
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bmi__title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.bmi__inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.weight__wrappers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.weight,
+.height {
+  margin: 20px;
+}
+
+.outcome {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.outcome__button {
+  background-color: black;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bmi__wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  flex-direction: column;
 }
