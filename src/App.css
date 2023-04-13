@@ -1,6 +1,7 @@
 body {
   background-color: rgba(104, 104, 104, 0.658);
   font-family: sans-serif;
+  margin: 0 auto;
 }
 
 .bmi__input {
@@ -61,4 +62,19 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .bmi__title {
+    font-size: 29px;
+  }
+  .bmi__input {
+    width: 120px;
+  }
+}
+
+
+.needed__statement {
+  font-size: 20px;
+  text-align: center;
 }
