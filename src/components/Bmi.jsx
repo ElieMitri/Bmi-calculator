@@ -7,7 +7,7 @@ const Bmi = () => {
   const [weight, setWeight] = useState(0);
   const [height, setHeight] = useState(0);
   const [outcome, setOutcome] = useState();
-  const [response, setResponse] = useState()
+  const [response, setResponse] = useState();
 
   function getBmiWeight(e) {
     setWeight(e.target.value);
@@ -21,10 +21,10 @@ const Bmi = () => {
     const bmi = (weight / (height * height)) * 10000;
     if (bmi < 18) {
       setOutcome("You are underweight!");
-    } else if (bmi > 25) {
-      setOutcome("You are overweight!");
     } else if (bmi > 30) {
       setOutcome("You are obese!");
+    } else if (bmi > 25) {
+      setOutcome("You are overweight!");
     } else {
       setOutcome("You are healthy!");
     }
